@@ -1,0 +1,22 @@
+class Person {
+  //   public firstName: string;
+  //   public lastName: string;
+  //   public age: number;
+
+  constructor(
+    public firstName: string,
+    public lastName: string,
+    public age: number,
+  ) {
+    // this.firstName = firstName;
+    // this.lastName = lastName;
+    // this.age = age;
+  }
+
+  introduce() {
+    return `My name is ${this.firstName} and I am ${this.age} years old.`;
+  }
+}
+
+const person = new Person("John", "Doe", 30);
+console.log(person.introduce());
